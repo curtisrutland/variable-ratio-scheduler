@@ -27,8 +27,8 @@ const useStyles = makeStyles({
   },
   number: {
     flexGrow: 1,
-    marginLeft: "4px !important",
-    marginRight: "4px !important"
+    marginLeft: "4px",
+    marginRight: "4px"
   },
   actions: {
     justifyContent: "center"

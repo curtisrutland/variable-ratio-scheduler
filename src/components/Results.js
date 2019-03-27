@@ -8,6 +8,9 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import IconButton from "@material-ui/core/IconButton";
+import SaveIcon from "@material-ui/icons/Save";
+import createExcelFile from "../lib/excel";
 
 const useStyles = makeStyles({
   root: {
@@ -17,15 +20,30 @@ const useStyles = makeStyles({
   },
   table: {
     width: "100%"
+  },
+  spacer: {
+    flexGrow: 1
+  },
+  icon: {
+    marginRight: "-12px"
   }
 });
 
 export default function Results({ results, avg }) {
   const classes = useStyles();
+
+  function handleSave() {
+    createExcelFile(results, avg);
+  }
+
   return (
     <Paper className={classes.root} elevation={5}>
     <Toolbar>
       <Typography variant="h6">VR {avg}</Typography>
+      <span className={classes.spacer}/>
+      <IconButton className={classes.icon} onClick={handleSave}>
+        <SaveIcon />
+      </IconButton>
     </Toolbar>
       <Table className={classes.table}>
         <TableHead>
