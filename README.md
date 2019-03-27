@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# variable-ratio-scheduler
+
+This project was inspired by my brother Sean, and is for use for creating Variable Ratio Schedules.
+
+# Create-React-App Original Readme:
+
 ## Available Scripts
 
 In the project directory, you can run:
