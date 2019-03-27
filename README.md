@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project was inspired by my brother Sean, and is for use for creating Variable Ratio Schedules.
 
+## [Live Application](https://curtisrutland.github.io/variable-ratio-scheduler/)
+[https://curtisrutland.github.io/variable-ratio-scheduler/](https://curtisrutland.github.io/variable-ratio-scheduler/)
+
 # Create-React-App Original Readme:
 
 ## Available Scripts
